@@ -1,5 +1,5 @@
 import converter
-def Welcome():
+def main():
     print("================Welcome to the Currency Converter================\n")
     base_curency = str(input("Enter the base currency code: "))
     target_curency = str(input("Enter the target currency code: "))
@@ -9,8 +9,9 @@ def Welcome():
     print("Do you want to convert another currency? (yes/no)")
     answer = input()
     if answer == 'yes':
-        Welcome()
+        main()
     else:
         print("\n================Thanks for using our service================")
 
-Welcome()
+if __name__ == "__main__" :
+    main()
